@@ -406,4 +406,65 @@ HOP RTT     ADDRESS
 
 OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
 Nmap done: 1 IP address (1 host up) scanned in 1.81 seconds
+mtech@programming-lab:~/Desktop$ ifconfig
+enp2s0: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 10.10.1.83  netmask 255.255.0.0  broadcast 10.10.255.255
+        inet6 fe80::7af0:bb82:e8b8:64ce  prefixlen 64  scopeid 0x20<link>
+        ether 88:ae:dd:28:3f:23  txqueuelen 1000  (Ethernet)
+        RX packets 86062  bytes 58468447 (58.4 MB)
+        RX errors 0  dropped 49  overruns 0  frame 0
+        TX packets 29116  bytes 5516225 (5.5 MB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
+        inet 127.0.0.1  netmask 255.0.0.0
+        inet6 ::1  prefixlen 128  scopeid 0x10<host>
+        loop  txqueuelen 1000  (Local Loopback)
+        RX packets 71521  bytes 5676820 (5.6 MB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 71521  bytes 5676820 (5.6 MB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+mtech@programming-lab:~/Desktop$ nmap 10.10.1.106
+Starting Nmap 7.94SVN ( https://nmap.org ) at 2026-07-08 14:46 IST
+Nmap scan report for 10.10.1.106
+Host is up (0.00057s latency).
+All 1000 scanned ports on 10.10.1.106 are in ignored states.
+Not shown: 1000 closed tcp ports (conn-refused)
+
+Nmap done: 1 IP address (1 host up) scanned in 0.16 seconds
+mtech@programming-lab:~/Desktop$ sudo nmap-A 10.10.1.106
+sudo: nmap-A: command not found
+mtech@programming-lab:~/Desktop$ sudo nmap- A 10.10.1.106
+sudo: nmap-: command not found
+mtech@programming-lab:~/Desktop$ sudo nmap - A 10.10.1.106
+Starting Nmap 7.94SVN ( https://nmap.org ) at 2026-07-08 14:51 IST
+Failed to resolve "-".
+Bare '-': did you put a space between '--'?
+Failed to resolve "A".
+Nmap scan report for 10.10.1.106
+Host is up (0.000092s latency).
+All 1000 scanned ports on 10.10.1.106 are in ignored states.
+Not shown: 1000 closed tcp ports (reset)
+MAC Address: 88:AE:DD:28:40:4A (EliteGroup Computer Systems)
+
+Nmap done: 1 IP address (1 host up) scanned in 0.28 seconds
+mtech@programming-lab:~/Desktop$ sudo nmap -A 10.10.1.106
+Starting Nmap 7.94SVN ( https://nmap.org ) at 2026-07-08 14:52 IST
+Nmap scan report for 10.10.1.106
+Host is up (0.00013s latency).
+All 1000 scanned ports on 10.10.1.106 are in ignored states.
+Not shown: 1000 closed tcp ports (reset)
+MAC Address: 88:AE:DD:28:40:4A (EliteGroup Computer Systems)
+Too many fingerprints match this host to give specific OS details
+Network Distance: 1 hop
+
+TRACEROUTE
+HOP RTT     ADDRESS
+1   0.13 ms 10.10.1.106
+
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 1.81 seconds
+mtech@programming-lab:~/Desktop$ .
+
 
