@@ -465,6 +465,18 @@ HOP RTT     ADDRESS
 
 OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
 Nmap done: 1 IP address (1 host up) scanned in 1.81 seconds
-mtech@programming-lab:~/Desktop$ .
+mtech@programming-lab:~/Desktop$ sudo apt install tcpdump
+[sudo] password for mtech: 
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+tcpdump is already the newest version (4.99.4-3ubuntu4.24.04.1).
+tcpdump set to manually installed.
+The following packages were automatically installed and are no longer required:
+  libgl1-amber-dri libglapi-mesa python3-netifaces
+Use 'sudo apt autoremove' to remove them.
+0 upgraded, 0 newly installed, 0 to remove and 4 not upgraded.
+mtech@programming-lab:~/Desktop$ nano arjun_45_lab1
+
 
 
