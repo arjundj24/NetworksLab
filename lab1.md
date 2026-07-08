@@ -477,6 +477,83 @@ The following packages were automatically installed and are no longer required:
 Use 'sudo apt autoremove' to remove them.
 0 upgraded, 0 newly installed, 0 to remove and 4 not upgraded.
 mtech@programming-lab:~/Desktop$ nano arjun_45_lab1
+mtech@programming-lab:~/Desktop$ sudo tcpdump -A tcp
+tcpdump: verbose output suppressed, use -v[v]... for full protocol decode
+listening on enp2s0, link-type EN10MB (Ethernet), snapshot length 262144 bytes
+15:39:25.493121 IP programming-lab.56766 > 146.75.45.91.https: Flags [P.], seq 1963332172:1963332211, ack 3473059611, win 138, options [nop,nop,TS val 271282986 ecr 1859868], length 39
+E..[o.@.@...
+
+.S.K-[....u..L.........P.....
+.+s*..a....."`...(c.6....s...|\."...i;.........
+15:39:25.493329 IP 146.75.45.91.https > programming-lab.56766: Flags [.], ack 39, win 1540, options [nop,nop,TS val 1874508 ecr 271282986], length 0
+E..4s.@.@....K-[
+
+.S........u..s...........
+...L.+s*
+15:39:25.493369 IP programming-lab.56766 > 146.75.45.91.https: Flags [P.], seq 39:63, ack 1, win 138, options [nop,nop,TS val 271282986 ecr 1874508], length 24
+E..Lo	@.@...
+
+.S.K-[....u..s.........A.....
+.+s*...L......84..C$........d..z
+15:39:25.493390 IP programming-lab.56766 > 146.75.45.91.https: Flags [F.], seq 63, ack 1, win 138, options [nop,nop,TS val 271282986 ecr 1874508], length 0
+E..4o
+@.@...
+
+.S.K-[....u............).....
+.+s*...L
+15:39:25.493550 IP 146.75.45.91.https > programming-lab.56766: Flags [.], ack 63, win 1540, options [nop,nop,TS val 1874508 ecr 271282986], length 0
+E..4s.@.@....K-[
+
+.S........u..............
+...L.+s*
+15:39:25.532749 IP 146.75.45.91.https > programming-lab.56766: Flags [.], ack 64, win 1540, options [nop,nop,TS val 1874520 ecr 271282986], length 0
+E..4s.@.@....K-[
+
+.S........u..............
+...X.+s*
+15:39:25.542637 IP 146.75.45.91.https > programming-lab.56766: Flags [P.], seq 1:25, ack 64, win 1540, options [nop,nop,TS val 1874522 ecr 271282986], length 24
+E..Ls.@.@....K-[
+
+.S........u.......a......
+...Z.+s*.....(..	...F....."....M
+15:39:25.542639 IP 146.75.45.91.https > programming-lab.56766: Flags [F.], seq 25, ack 64, win 1540, options [nop,nop,TS val 1874522 ecr 271282986], length 0
+E..4s.@.@....K-[
+
+.S.......3u..............
+...Z.+s*
+15:39:25.542668 IP programming-lab.56766 > 146.75.45.91.https: Flags [R], seq 1963332236, win 0, length 0
+E..(..@.@.o.
+
+.S.K-[....u.......P...}...
+15:39:25.542690 IP programming-lab.56766 > 146.75.45.91.https: Flags [R], seq 1963332236, win 0, length 0
+E..(..@.@.o.
+
+.S.K-[....u.......P...}...
+15:39:29.818153 IP programming-lab.52506 > lb-140-82-112-22-iad.github.com.https: Flags [P.], seq 329061699:329061738, ack 1607750762, win 181, options [nop,nop,TS val 1699941722 ecr 1858256], length 39
+E..[!
+@.@...
+
+.S.Rp........C_.Tj...........
+eS.Z..Z.....""".. .#...Yf.....;5..J...'....D..&
+15:39:29.818307 IP lb-140-82-112-22-iad.github.com.https > programming-lab.52506: Flags [.], ack 39, win 1540, options [nop,nop,TS val 1875805 ecr 1699941722], length 0
+E..4-.@.@..W.Rp.
+
+.S...._.Tj...j...........
+...]eSZ
+15:39:30.119130 IP lb-140-82-112-22-iad.github.com.https > programming-lab.52506: Flags [P.], seq 1:40, ack 39, win 1540, options [nop,nop,TS val 1875895 ecr 1699941722], length 39
+E..[-.@.@../.Rp.
+
+.S...._.Tj...j...........
+....eS.Z...."P.X.~.nh.p.3.7KnJ.>.z..}.......$..
+15:39:30.119169 IP programming-lab.52506 > lb-140-82-112-22-iad.github.com.https: Flags [.], ack 40, win 181, options [nop,nop,TS val 1699942023 ecr 1875895], length 0
+E..4!.@.@...
+
+.S.Rp........j_.T............
+eS......
+^C
+14 packets captured
+14 packets received by filter
+0 packets dropped by kernel
 
 
 
